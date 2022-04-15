@@ -6,13 +6,14 @@
         xmlns:local="clr-namespace:shutdown_restart_tool"
         mc:Ignorable="d"
         Title="Shutdown And Restart Tool" Height="160" Width="320" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen">
-    <Grid Margin="10,8,10,16" Width="300" Height="120">
+    <Grid Margin="10,3,10,21" Width="300" Height="120">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="37*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Shutdwon And Restart Tool&#xD;&#xA;" HorizontalAlignment="Center" VerticalAlignment="Top" Height="26" Width="154" Margin="0,11,0,0"/>
-        <Button x:Name="btnRestart" Content="RESTART" HorizontalAlignment="Left" Margin="54,50,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="btnRestart_Click" FontWeight="Bold" BorderThickness="0,0,0,0" Cursor="Hand"/>
-        <Button x:Name="btnShutdown" Content="SHUTDOWN" HorizontalAlignment="Left" Margin="164,50,0,0" VerticalAlignment="Top" Width="100" Height="50" Click="btnShutdown_Click" FontWeight="Bold" BorderThickness="0,0,0,0" Cursor="Hand"/>
+        <Label Content="Shutdwon And Restart Tool&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="154" Margin="73,4,0,0" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnRestart" Content="RESTART" HorizontalAlignment="Left" Margin="47,40,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="btnRestart_Click" FontWeight="Bold" BorderThickness="0,0,0,0" Cursor="Hand" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnShutdown" Content="SHUTDOWN" HorizontalAlignment="Left" Margin="79,40,0,0" VerticalAlignment="Top" Width="100" Height="50" Click="btnShutdown_Click" FontWeight="Bold" BorderThickness="0,0,0,0" Cursor="Hand" Grid.Column="1"/>
 
     </Grid>
 </Window>
