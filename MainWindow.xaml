@@ -5,13 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:shutdown_restart_tool"
         mc:Ignorable="d"
-        Title="Shutdown And Restart Tool" Height="150" Width="320" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen">
-    <Grid Margin="10,3,10,21" Width="300" Height="120">
+        Title="Shutdown And Restart Tool" 
+        Height="150" 
+        Width="320"
+        ResizeMode="NoResize" 
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterScreen"
+        Icon="/shutdown.png">
+    <Grid Margin="4,12,0,0" Width="305" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnRestart" Content="RESTART" HorizontalAlignment="Left" Margin="47,30,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="btnRestart_Click" FontWeight="Bold" BorderThickness="0,0,0,0" Cursor="Hand"/>
-        <Button x:Name="btnShutdown" Content="SHUTDOWN" HorizontalAlignment="Left" Margin="156,30,0,0" VerticalAlignment="Top" Width="100" Height="50" Click="btnShutdown_Click" FontWeight="Bold" BorderThickness="0,0,0,0" Cursor="Hand"/>
+        <Button x:Name="btnRestart" 
+                Content="RESTART" 
+                HorizontalAlignment="Left" 
+                Margin="40,14,0,0" 
+                VerticalAlignment="Top" 
+                Height="50" 
+                Width="100" 
+                Click="btnRestart_Click" 
+                FontWeight="Bold" 
+                BorderThickness="0,0,0,0" 
+                Cursor="Hand"/>
+        <Button x:Name="btnShutdown" 
+                Content="SHUTDOWN" 
+                Margin="161,14,0,0" 
+                Width="100" 
+                Height="50" 
+                Click="btnShutdown_Click" 
+                FontWeight="Bold" 
+                BorderThickness="0,0,0,0" 
+                Cursor="Hand" 
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Left"/>
 
     </Grid>
 </Window>

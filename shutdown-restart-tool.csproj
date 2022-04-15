@@ -7,7 +7,7 @@
     <ProjectGuid>{30FFCDF9-CDF3-4897-9189-A00C97CD3001}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>shutdown_restart_tool</RootNamespace>
-    <AssemblyName>shutdown-restart-tool</AssemblyName>
+    <AssemblyName>Shutdown Restart Tool</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -33,6 +33,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>shutdown_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -93,6 +96,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="shutdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="shutdown_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
